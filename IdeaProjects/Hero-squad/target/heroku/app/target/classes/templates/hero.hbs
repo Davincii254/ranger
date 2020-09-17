@@ -1,0 +1,25 @@
+
+{{#partial "content"}}
+    <section class="landing-pg">
+        <div class="land-left">
+        </div>
+        <div class="land-right">
+        </div>
+        <h2> <a class="btns" href="/hero-form" >Create Your Hero</a> <br><br> OUR HEROES</h2>
+        <div class="heroes">
+            {{#each hero}}
+                <div class="hero-item">
+                    <img src="/img/deadpool.png" alt="">
+                    <p>Name: {{ name }} </p>
+                    <p>Special power: {{ power }}</p>
+                    <p>Age: {{ age }}</p>
+                    <p>Weakness: {{ weakness }}</p>
+                    <p>Id: {{ id }}</p>
+                    <a href="/squad" class="btns">Add {{ name }} To Squad</a>
+                </div>
+
+            {{/each}}
+        </div>
+    </section>
+{{/partial}}
+{{> layout.hbs}}
