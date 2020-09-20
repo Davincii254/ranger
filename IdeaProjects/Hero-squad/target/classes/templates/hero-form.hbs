@@ -1,9 +1,19 @@
 {{#partial "content"}}
-    <section class="landing-pg">
-        <div class="land-left"></div>
-        <div class="land-right"></div>
-        <form class="form" action="/new/hero" method="post">
-            <h1>Create Your Hero</h1>
+
+    <header>
+        <hr class="nav-hr" style="padding-top:0px;">
+        <nav class="navbar justify-content-center bg-dark">
+            <ul class="nav">
+                <a class="nav-item nav-link" href="/"><li>Home</li></a>
+                <a class="nav-item nav-link" href="/hero"><li>Hero</li></a>
+                <a class="nav-item nav-link" href="/squad"><li>Squad</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div class="jumbotron text-center display-4">
+        <h1>Create Your Hero</h1>
+    </div>
+    <div class="userclass">
             <div class="form-group">
                 <input type="text" placeholder="Hero's name" name="name" required class="form-control">
             </div>
@@ -22,6 +32,8 @@
 
             <input class="btns" type="submit">
         </form>
+    </div>
     </section>
+
 {{/partial}}
 {{> layout.hbs}}

@@ -1,68 +1,15 @@
-content{
-background img:(img/avengers.jpg)
+.body{
+    background-image: url("/img/avengers.jpg");
+    height: 720px;
+    overflow-y: auto;
+    background-size: auto;
 }
-
-h1,h3,h4{
-    position:center;
-    color:purple;
+.jumbotron{
+    background-color: rgba(173, 52, 36, 0.2);
 }
-
-.btns{
-  border: none;
-  padding: 10px 20px;
+.userclass{
+    background-color: rgba(173, 52, 36, 0.2);
 }
-
-.btns:hover{
-  background: purple;
-  color: white;
-}
-
-.image1{
-    height:100px;
-    width:80px;
-
-}
-
-.hero-item{
-  text-align: left;
-  position: relative;
-  width: 500px;
-  max-width: 100%;
-  margin: 5%;
-  display: inline-block;
-  padding: 10px;
-  padding-left: 60px;
-}
-
-.hero-item img{
-  position: absolute;
-  display: block;
-  left: -20px;
-  height: 100px;
-}
-
-
-.squad{
-  z-index: 4;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  justify-content: space-around;
-}
-#newMember{
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  left: -100%;
-  overflow: auto;
-}
-
-
-.squad-cont{
-  position: relative;
-    padding: 20px;
-  display: inline-block;
-  color: white;
-  margin: 1% 2.5%;
-   width: 500px;
+.heroes{
+     background-color: rgba(173, 52, 36, 0.2);
 }

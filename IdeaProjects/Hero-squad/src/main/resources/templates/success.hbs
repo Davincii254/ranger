@@ -1,18 +1,28 @@
 {{#partial "content"}}
-    <section class="landing-pg">
-        <div class="land-left">
-        </div>
-        <div class="land-right">
-        </div>
 
-        <div class="success">
+    <header>
+        <hr class="nav-hr" style="padding-top:0px;">
+        <nav class="navbar justify-content-center bg-dark">
+            <ul class="nav">
+                <a class="nav-item nav-link" href="/"><li>Home</li></a>
+                <a class="nav-item nav-link" href="/hero"><li>Hero</li></a>
+                <a class="nav-item nav-link" href="/squad"><li>Squad</li></a>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="success">
             {{ item }}
+        <div class="jumbotron text-center">
             <h3>Success <br>  <span>{{ item }} </span> <br> Has been created successfully <br>{{sqId}}</h3>
-
-            <img src="/img/avengers.jpg" alt="">
+        </div>
+        <div class="userclass">
             <a class="btns btn-green" href="/hero">View Heroes</a>
             <a class="btns btn-green" href="/squad">View Squads</a>
+
         </div>
-    </section>
+        </div>
 {{/partial}}
 {{> layout.hbs}}

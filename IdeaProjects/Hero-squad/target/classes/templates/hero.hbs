@@ -1,15 +1,28 @@
 
 {{#partial "content"}}
-    <section class="landing-pg">
-        <div class="land-left">
-        </div>
-        <div class="land-right">
-        </div>
-        <h2> <a class="btns" href="/hero-form" >Create Your Hero</a> <br><br> OUR HEROES</h2>
+
+    <header>
+        <hr class="nav-hr" style="padding-top:0px;">
+        <nav class="navbar justify-content-center bg-dark">
+            <ul class="nav">
+                <a class="nav-item nav-link" href="/"><li>Home</li></a>
+                <a class="nav-item nav-link" href="/hero"><li>Hero</li></a>
+                <a class="nav-item nav-link" href="/squad"><li>Squad</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="jumbotron text-center">
+        <h2> <a class="btns display-4" href="/hero-form" >Create Your Hero</a> <br><br> </h2>
+        <h3 class="display-4">OUR HEROES</h3>
+        <div class="container-heroes">
+            <div class="card">
+                <div class="card-body text-black">
+
         <div class="heroes">
+            <div class="card-text text-black">
             {{#each hero}}
                 <div class="hero-item">
-                    <img src="/img/deadpool.png" alt="">
                     <p>Name: {{ name }} </p>
                     <p>Special power: {{ power }}</p>
                     <p>Age: {{ age }}</p>
@@ -20,6 +33,11 @@
 
             {{/each}}
         </div>
+        </div>
+            </div>
+            </div>
+        </div>
+    </div>
     </section>
 {{/partial}}
 {{> layout.hbs}}
