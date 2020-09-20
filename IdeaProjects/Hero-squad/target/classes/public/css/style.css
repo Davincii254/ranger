@@ -1,5 +1,5 @@
 .body{
-    background-image: url("/img/avengers.jpg");
+    background-image: url("img/avengers.jpg");
     height: 720px;
     overflow-y: auto;
     background-size: auto;
