@@ -1,15 +1,12 @@
-.body{
-    background-image: url("img/avengers.jpg");
+body{
+    background-image: url('img/avengers.jpg');
     height: 720px;
     overflow-y: auto;
     background-size: auto;
 }
 .jumbotron{
-    background-color: rgba(173, 52, 36, 0.2);
+    background-color: rgba(134, 132, 231);
 }
 .userclass{
     background-color: rgba(173, 52, 36, 0.2);
-}
-.heroes{
-     background-color: rgba(173, 52, 36, 0.2);
 }
