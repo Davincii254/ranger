@@ -2,25 +2,51 @@
 
 The system will allow a user to create a new hero, create and view a squad of heroes and delete heroe's from the list.
 
-Technologies Used
- Java
+#### By Davincii254
 
-Requirements JavaScript Console
+## Behavior Driven Development
 
-Setup Instructions and Installation Clone this repository to a location in your file system. 'git clone https://github.com/Davincii254/Caesar-Cipher.git Open terminal command line then navigate to the root folder of the application. cd Caesar-Cipher.
-Development Want to contribute? Great!
+> INPUTS: Animal's name, location spotted, other physical attributes of the animal, ranger who made the spotting.
+> Output: A table that shows all the animals in the database with their detailed information
 
-To fix a bug or enhance an existing module, follow these steps:
+## Prerequisites
 
-Fork the repo Create a new branch (git checkout -b improve-feature) Make the appropriate changes in the files Add changes to reflect the changes made Commit your changes (git commit -am 'Improve feature') Push to the branch (git push origin improve-feature) Create a Pull Request Known Bugs If you find a bug (the website couldn't handle the query and or gave undesired results), kindly open an issue here by including your search query and the expected result.
+You need Java installed on your pc. First install sdkman, then use sdk man to install java on your pc using the command "sdk install java"
 
-If you'd like to request a new function, feel free to do so by opening an issue here. Please include sample queries and their corresponding results.
+You also need Gradle. Install it using "sdk install gradle"
+
+You need postgres installed for the database to work.
+
+###  Setup.
+
+- Clone the repo to your pc.
+
+- Open the project folder with the IDE of your choice, preferably Intellij
+### Database Setup
+Open your terminal, and type in psql. Then type the following
+
+       * CREATE DATABASE wildlife_tracker;
+       * \c wildlife_tracker;
+       * CREATE TABLE animals (id SERIAL PRIMARY KEY, ranger_name VARCHAR, animal_name VARCHAR,health VARCHAR, age VARCHAR, location VARCHAR);
+       * CREATE TABLE sightings (id SERIAL PRIMARY KEY, ranger_name VARCHAR, animal_name VARCHAR,health VARCHAR, age VARCHAR, location VARCHAR);
+ 
 
 
+ ### Technologies Used
+     
+* HTML
+* CSS
+* Java
+* Spark
+* Heroku
 
 
-License
+### License
+MIT
+Copyright (c) {2020} Davincii254.
 
+
+### License
 
 MIT License
 
