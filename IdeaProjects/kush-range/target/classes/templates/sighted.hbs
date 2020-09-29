@@ -1,0 +1,41 @@
+<!--binding form -->
+{{#partial "content"}}
+    <div class="jumbotron style="style="text-align: center;">
+        <div class="row">
+            <div class="col-md-12">
+                {{#if sightings}}
+                    <h3>Sightings</h3>
+                    <i>If an animal has no health and age data, it's non-endangered.</i>
+                    <table class="table table-light">
+                        <thead>
+                        <tr>
+                            <th scope="col">Animal</th>
+                            <th scope="col">Ranger</th>
+                            <th scope="col">Health</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">location</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {{#each sightings}}
+                            <tr>
+                                <td>{{animal_name}}</td>
+                                <td>{{ranger_name}}</td>
+                                <td>{{health}}</td>
+                                <td>{{age}}</td>
+                                <td>{{location}}</td>
+                            </tr>
+                        {{/each}}
+                        </tbody>
+                    </table>
+                    <!--<a class="btn btn-primary" href="/sightingendangered/new">Sight Endangered Animal</a>
+                    <a class="btn btn-primary" href="/sightingnonendangered/new">Sight Non-Endangered Animal</a>-->
+                {{else}}
+                  <p style="text-align: center;color: red" >No sightings Reported</p>
+                 {{/if}}
+            </div>
+            </div>
+        </div>
+    </div>
+{{/partial}}
+{{> layout.hbs}}

@@ -1,0 +1,55 @@
+{{#partial "content"}}
+<div class = "jumbotron1">
+    <div >
+        <p class="text-center">New Endangered Animals</p>
+        <div>
+        <div class="card-body">
+            <div class="form-center">
+
+                <form action="/endangered/new" method="post">
+
+                    <div class="form-group">
+                        <label for="name">Animal Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Animal Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Health">Health </label>
+                        <select class="form-control" id="Health">
+                            <option>Healthy</option>
+                            <option>Ill</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Age">Age </label>
+                        <select class="form-control" id="age">
+                            <option>Young</option>
+                            <option>Adult</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="v">Location </label>
+                        <select class="form-control" id="Location">
+                            <option> Zone A</option>
+                            <option> Zone B</option>
+                            <option> Zone C</option>
+                            <option> Zone D</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Ranger Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ranger_Name" required>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+{{/partial}}
+{{> layout.hbs}}

@@ -1,0 +1,6 @@
+models/Animal.class
+App.class
+models/SightingInfo.class
+models/DB.class
+models/Sighting.class
+models/Endangered.class

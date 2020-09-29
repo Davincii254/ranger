@@ -1,0 +1,44 @@
+{{#partial "content"}}
+    <div>
+        <div class="jumbotron1">
+            <div class="card-header">
+                <p class="txt-center">Sight Non-Endangered Animal. </p>
+                <div class="card-body">
+                    <form action="/non-endangered/new" method="post">
+
+                        <div class="form-group">
+                            <label for="name">Animal Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Animal Name" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="v">Location </label>
+                            <select class="form-control" id="Location">
+                                <option> Zone A</option>
+                                <option> Zone B</option>
+                                <option> Zone C</option>
+                                <option> Zone D</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="name">Ranger Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Ranger_Name" required>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-default">Add!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+     </div>
+  </div>
+{{/partial}}
+
+{{> layout.hbs}}

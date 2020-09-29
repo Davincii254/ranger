@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: models.AnimalTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 2.444 sec <<< FAILURE! - in models.AnimalTest
+save_assignsIdToObjectAndSavesObjectToDatabase(models.AnimalTest)  Time elapsed: 0.58 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.AnimalTest.save_assignsIdToObjectAndSavesObjectToDatabase(AnimalTest.java:31)
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.AnimalTest.save_assignsIdToObjectAndSavesObjectToDatabase(AnimalTest.java:31)
+
+delete_deletesAnimalFromDatabase_0(models.AnimalTest)  Time elapsed: 0.617 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.AnimalTest.delete_deletesAnimalFromDatabase_0(AnimalTest.java:58)
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.AnimalTest.delete_deletesAnimalFromDatabase_0(AnimalTest.java:58)
+
+all_returnsAllInstancesOfAnimal_false(models.AnimalTest)  Time elapsed: 0.63 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.AnimalTest.all_returnsAllInstancesOfAnimal_false(AnimalTest.java:39)
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.AnimalTest.all_returnsAllInstancesOfAnimal_false(AnimalTest.java:39)
+
+find_returnsAnimalWithSameId_secondAnimal(models.AnimalTest)  Time elapsed: 0.613 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.AnimalTest.find_returnsAnimalWithSameId_secondAnimal(AnimalTest.java:49)
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.AnimalTest.find_returnsAnimalWithSameId_secondAnimal(AnimalTest.java:49)
+

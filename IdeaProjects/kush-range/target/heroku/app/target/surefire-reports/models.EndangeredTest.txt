@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: models.EndangeredTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 5, Skipped: 0, Time elapsed: 3.402 sec <<< FAILURE! - in models.EndangeredTest
+getHealth_returnsCorrectHealthAttribute_true(models.EndangeredTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Healthy]> but was:<[Ill]>
+	at models.EndangeredTest.getHealth_returnsCorrectHealthAttribute_true(EndangeredTest.java:16)
+
+all_returnsAllInstancesOfEndangeredAnimal_true(models.EndangeredTest)  Time elapsed: 0.74 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.EndangeredTest.all_returnsAllInstancesOfEndangeredAnimal_true(EndangeredTest.java:30)
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.EndangeredTest.all_returnsAllInstancesOfEndangeredAnimal_true(EndangeredTest.java:30)
+
+update_updatesAgeAttribute_true(models.EndangeredTest)  Time elapsed: 0.615 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.EndangeredTest.update_updatesAgeAttribute_true(EndangeredTest.java:57)
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.EndangeredTest.update_updatesAgeAttribute_true(EndangeredTest.java:57)
+
+save_assignsIdAndSavesObjectToDatabase(models.EndangeredTest)  Time elapsed: 0.744 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.EndangeredTest.save_assignsIdAndSavesObjectToDatabase(EndangeredTest.java:22)
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.EndangeredTest.save_assignsIdAndSavesObjectToDatabase(EndangeredTest.java:22)
+
+find_returnsAnimalWithSameId_secondAnimal(models.EndangeredTest)  Time elapsed: 0.71 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.EndangeredTest.find_returnsAnimalWithSameId_secondAnimal(EndangeredTest.java:40)
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.EndangeredTest.find_returnsAnimalWithSameId_secondAnimal(EndangeredTest.java:40)
+
+update_updatesHealthAttribute_true(models.EndangeredTest)  Time elapsed: 0.59 sec  <<< ERROR!
+org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.EndangeredTest.update_updatesHealthAttribute_true(EndangeredTest.java:49)
+Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "154.153.170.206", user "ccyhkvpngqxwcm", database "d5j2hvlid2h80o", SSL off
+	at models.EndangeredTest.update_updatesHealthAttribute_true(EndangeredTest.java:49)
+

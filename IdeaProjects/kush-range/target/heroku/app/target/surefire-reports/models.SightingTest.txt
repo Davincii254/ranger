@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: models.SightingTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec <<< FAILURE! - in models.SightingTest
+testSighting_getCorrectId_int(models.SightingTest)  Time elapsed: 0.02 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<18> but was:<0>
+	at models.SightingTest.testSighting_getCorrectId_int(SightingTest.java:14)
+
+testSighting_getCorrectLocation_String(models.SightingTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Kenya]> but was:<[Zone A]>
+	at models.SightingTest.testSighting_getCorrectLocation_String(SightingTest.java:20)
+
+testSighting_getCorrectRangerName_String(models.SightingTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Kevi]n> but was:<[Joh]n>
+	at models.SightingTest.testSighting_getCorrectRangerName_String(SightingTest.java:26)
+
