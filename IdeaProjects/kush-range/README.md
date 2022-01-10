@@ -41,8 +41,6 @@ Open your terminal, and type in psql. Then type the following
 * Spark
 * Heroku
 
-### Contacts
-Reach me at soniamakena02@gmail.com incase of any issues.
 
 ### License
 MIT
